@@ -1,0 +1,6 @@
+<svg width="260" height="60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#dac5a7">
+    <path d="M80,10 Q10,30 20,50 L70,50 Q20,30 65,10 Z" fill="#dac5a7"/>
+    <text x="60" y="38" font-family="Arial, sans-serif" font-size="26" fill="#dac5a7">ASSOCIATE</text>
+  </g>
+</svg>

@@ -181,3 +181,56 @@ body {
     }
   }
 }
+
+.marquee{
+  width: 100%;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+
+  #marquee{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      background-image: linear-gradient(to right, #070705 , transparent);
+    }
+    &::before{
+      content: "";
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      background-image: linear-gradient(to left,#070705 , transparent );
+    }
+
+    .logos{
+      display: flex;
+      gap: 2rem;
+      padding: 0 1.5rem;
+      animation: marquee 10s linear infinite both;
+
+      p{
+        width: 200px;
+      }
+    }
+  }
+}
+@keyframes marquee {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
