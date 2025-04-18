@@ -10,6 +10,8 @@ body {
   height: 100%;
   background-color: #070705;
   color: white;
+  padding: 0 2rem;
+  position: relative;
 }
 
 .intro {
@@ -17,14 +19,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 0 100px;
 }
 .intro nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 30px;
   width: 500px;
   height: 60px;
@@ -89,6 +89,10 @@ body {
   padding: 8px 16px;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.intro nav button:hover {
+  background-color: rgb(179, 161, 136);
 }
 .intro .userImg {
   padding-top: 40px;
@@ -163,45 +167,50 @@ body {
 }
 
 .marquee {
-  width: 100%;
-  padding: 4rem 3rem;
-  display: flex;
-  justify-content: center;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .marquee #marquee {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
-.marquee #marquee::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-  background-image: linear-gradient(to right, #070705, transparent);
-}
-.marquee #marquee::before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background-image: linear-gradient(to left, #070705, transparent);
+.marquee #marquee .logos-wrapper {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: marquee 14s linear infinite;
 }
 .marquee #marquee .logos {
   display: flex;
   gap: 2rem;
   padding: 0 1.5rem;
-  animation: marquee 10s linear infinite both;
 }
 .marquee #marquee .logos p {
   width: 200px;
+}
+.marquee #marquee .logos .two {
+  width: 306px;
+}
+.marquee #marquee .logos .three, .marquee #marquee .logos .four {
+  zoom: 1.2;
+}
+.marquee #marquee::after, .marquee #marquee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+}
+.marquee #marquee::after {
+  left: 0;
+  background-image: linear-gradient(to right, #070705, transparent);
+}
+.marquee #marquee::before {
+  right: 0;
+  background-image: linear-gradient(to left, #070705, transparent);
 }
 
 @keyframes marquee {
@@ -209,6 +218,85 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
+}
+.cards {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.cards .webCard, .cards .devCard, .cards .contentCard {
+  padding: 30px;
+  width: 25rem;
+  max-height: 18rem;
+  background-color: rgb(24, 23, 22);
+  border: 1px solid rgb(52, 50, 48);
+  position: relative;
+}
+.cards .webCard .first-p, .cards .devCard .first-p, .cards .contentCard .first-p {
+  color: rgba(218, 197, 167, 0.6);
+  font-family: "Satoshi", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+.cards .webCard h2, .cards .devCard h2, .cards .contentCard h2 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 31px;
+  color: rgb(218, 197, 167);
+  padding-bottom: 10px;
+}
+.cards .webCard p, .cards .devCard p, .cards .contentCard p {
+  font-family: "Chillax", sans-serif;
+  font-size: 17px;
+  word-spacing: 1.5px;
+  line-height: 26px;
+  color: #c5b398;
+}
+.cards .webCard .servicesBtn, .cards .devCard .servicesBtn, .cards .contentCard .servicesBtn {
+  display: flex;
+  position: absolute;
+  margin-top: 17px;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  bottom: 20px;
+}
+.cards .webCard .servicesBtn #svg, .cards .devCard .servicesBtn #svg, .cards .contentCard .servicesBtn #svg {
+  padding: 10px;
+  border: 1px solid #34312c;
+  border-radius: 50%;
+  background-color: #181716;
+  text-align: center;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  rotate: 225deg;
+}
+.cards .webCard .servicesBtn span, .cards .devCard .servicesBtn span, .cards .contentCard .servicesBtn span {
+  padding-left: 4px;
+  font-family: "Satoshi", "sans-serif";
+  font-size: 13px;
+  line-height: 16px;
+  color: rgb(218, 197, 167);
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.cards .webCard .servicesBtn:hover #svg, .cards .devCard .servicesBtn:hover #svg, .cards .contentCard .servicesBtn:hover #svg {
+  border: 0.1px solid rgb(101, 93, 82);
+  background-color: #2b2825;
+  rotate: 270deg;
+}
+.cards .webCard {
+  grid-area: a;
+}
+.cards .devCard {
+  grid-area: b;
+}
+.cards .contentCard {
+  grid-area: c;
 }

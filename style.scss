@@ -10,6 +10,8 @@ body {
   height: 100%;
   background-color: #070705;
   color: white;
+  padding: 0 2rem;
+  position: relative;
 }
 
 //Section - 1
@@ -18,13 +20,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 0 100px;
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 30px;
     width: 500px;
     height: 60px;
@@ -97,8 +97,13 @@ body {
       padding: 8px 16px;
       letter-spacing: 2px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    button:hover{
+      background-color: rgb(179, 161, 136);
     }
   }
+  
 
   .userImg {
     padding-top: 40px;
@@ -182,55 +187,156 @@ body {
   }
 }
 
+// Section-2
 .marquee{
+  padding-top:100px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+#marquee {
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  padding: 4rem 3rem;
+
+  .logos-wrapper {
+    display: flex;
+    width: max-content;
+    animation: marquee 14s linear infinite;
+  }
+
+  .logos {
+    display: flex;
+    gap: 2rem;
+    padding: 0 1.5rem;
+
+    p {
+      width: 200px;
+    }
+    .one{
+
+    }
+    .two{
+      width: 306px;
+    }
+    .three,.four{
+      zoom: 1.2;
+    }
+    
+    
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+  }
+
+  &::after {
+    left: 0;
+    background-image: linear-gradient(to right, #070705, transparent);
+  }
+
+  &::before {
+    right: 0;
+    background-image: linear-gradient(to left, #070705, transparent);
+  }
+}
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Section-3
+.cards{
+  width: 100%;
+  height: 25rem;
   display: flex;
   justify-content: center;
-
-  #marquee{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
+  gap: 2rem;
+  
+  
+  .webCard,.devCard,.contentCard{
+    padding: 30px;
+    width: 25rem;
+    max-height: 18rem;
+    background-color: rgb(24 23 22);
+    border: 1px solid rgb(52 50 48);
     position: relative;
-    &::after{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 50%;
-      background-image: linear-gradient(to right, #070705 , transparent);
+    .first-p{
+      color: rgba(218, 197, 167, 0.6);
+      font-family: "Satoshi", sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      padding-bottom: 5px;
     }
-    &::before{
-      content: "";
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 50%;
-      background-image: linear-gradient(to left,#070705 , transparent );
+    h2{
+      font-family: 'Satoshi', sans-serif;
+      font-weight: lighter;
+      font-size: 24px;
+      line-height: 31px;
+      color: rgb(218, 197, 167);
+      padding-bottom: 10px;
     }
-
-    .logos{
+    p{
+      font-family: 'Chillax', sans-serif;
+      font-size: 17px;
+      word-spacing: 1.5px;
+      line-height: 26px;
+      color: #c5b398;
+    }
+    .servicesBtn{
       display: flex;
-      gap: 2rem;
-      padding: 0 1.5rem;
-      animation: marquee 10s linear infinite both;
-
-      p{
-        width: 200px;
+      position: absolute;
+      margin-top: 17px;
+      align-items: center;
+      cursor: pointer;
+      gap: 10px;
+      bottom: 20px;
+      #svg{
+        padding: 10px;
+        border: 1px solid #34312c;
+        border-radius: 50%;
+        background-color:#181716;
+        text-align: center;
+        display: flex;
+        transition: all .3s ease-in-out;
+        rotate: 225deg;
+      }
+      span{
+        padding-left: 4px;
+        font-family: 'Satoshi','sans-serif';
+        font-size: 13px;
+        line-height: 16px;
+        color: rgb(218, 197, 167);
+        word-spacing: 2px;
+        letter-spacing: 2px;
+      }
+    }
+    .servicesBtn:hover{
+      #svg{
+        border: 0.1px solid rgb(101, 93, 82);
+        background-color: #2b2825;
+        rotate: 270deg;
       }
     }
   }
-}
-@keyframes marquee {
-  0%{
-    transform: translateX(0);
+  .webCard{
+    grid-area: a;
   }
-  100%{
-    transform: translateX(-100%);
+  .devCard{
+    grid-area: b;
+  }
+  .contentCard{
+    grid-area: c;
+
   }
 }
