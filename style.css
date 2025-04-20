@@ -117,7 +117,7 @@ body {
 }
 .intro .about h1 {
   font-family: "Satoshi", sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 128px;
   line-height: 122px;
   text-align: center;
@@ -193,7 +193,8 @@ body {
 .marquee #marquee .logos .two {
   width: 306px;
 }
-.marquee #marquee .logos .three, .marquee #marquee .logos .four {
+.marquee #marquee .logos .three,
+.marquee #marquee .logos .four {
   zoom: 1.2;
 }
 .marquee #marquee::after, .marquee #marquee::before {
@@ -228,22 +229,28 @@ body {
   justify-content: center;
   gap: 2rem;
 }
-.cards .webCard, .cards .devCard, .cards .contentCard {
+.cards .webCard,
+.cards .devCard,
+.cards .contentCard {
   padding: 30px;
-  width: 25rem;
+  width: 27rem;
   max-height: 18rem;
   background-color: rgb(24, 23, 22);
   border: 1px solid rgb(52, 50, 48);
   position: relative;
 }
-.cards .webCard .first-p, .cards .devCard .first-p, .cards .contentCard .first-p {
+.cards .webCard .first-p,
+.cards .devCard .first-p,
+.cards .contentCard .first-p {
   color: rgba(218, 197, 167, 0.6);
   font-family: "Satoshi", sans-serif;
   font-size: 13px;
   line-height: 16px;
   padding-bottom: 5px;
 }
-.cards .webCard h2, .cards .devCard h2, .cards .contentCard h2 {
+.cards .webCard h2,
+.cards .devCard h2,
+.cards .contentCard h2 {
   font-family: "Satoshi", sans-serif;
   font-weight: lighter;
   font-size: 24px;
@@ -251,14 +258,18 @@ body {
   color: rgb(218, 197, 167);
   padding-bottom: 10px;
 }
-.cards .webCard p, .cards .devCard p, .cards .contentCard p {
+.cards .webCard p,
+.cards .devCard p,
+.cards .contentCard p {
   font-family: "Chillax", sans-serif;
   font-size: 17px;
   word-spacing: 1.5px;
   line-height: 26px;
   color: #c5b398;
 }
-.cards .webCard .servicesBtn, .cards .devCard .servicesBtn, .cards .contentCard .servicesBtn {
+.cards .webCard .servicesBtn,
+.cards .devCard .servicesBtn,
+.cards .contentCard .servicesBtn {
   display: flex;
   position: absolute;
   margin-top: 17px;
@@ -267,8 +278,10 @@ body {
   gap: 10px;
   bottom: 20px;
 }
-.cards .webCard .servicesBtn #svg, .cards .devCard .servicesBtn #svg, .cards .contentCard .servicesBtn #svg {
-  padding: 10px;
+.cards .webCard .servicesBtn #svg,
+.cards .devCard .servicesBtn #svg,
+.cards .contentCard .servicesBtn #svg {
+  padding: 5px;
   border: 1px solid #34312c;
   border-radius: 50%;
   background-color: #181716;
@@ -277,7 +290,9 @@ body {
   transition: all 0.3s ease-in-out;
   rotate: 225deg;
 }
-.cards .webCard .servicesBtn span, .cards .devCard .servicesBtn span, .cards .contentCard .servicesBtn span {
+.cards .webCard .servicesBtn span,
+.cards .devCard .servicesBtn span,
+.cards .contentCard .servicesBtn span {
   padding-left: 4px;
   font-family: "Satoshi", "sans-serif";
   font-size: 13px;
@@ -286,7 +301,9 @@ body {
   word-spacing: 2px;
   letter-spacing: 2px;
 }
-.cards .webCard .servicesBtn:hover #svg, .cards .devCard .servicesBtn:hover #svg, .cards .contentCard .servicesBtn:hover #svg {
+.cards .webCard .servicesBtn:hover #svg,
+.cards .devCard .servicesBtn:hover #svg,
+.cards .contentCard .servicesBtn:hover #svg {
   border: 0.1px solid rgb(101, 93, 82);
   background-color: #2b2825;
   rotate: 270deg;
@@ -299,4 +316,126 @@ body {
 }
 .cards .contentCard {
   grid-area: c;
+}
+
+.head-selected-work {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Satoshi", "san-serif";
+  color: rgb(218, 197, 167);
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+}
+.head-selected-work h1 {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 48px;
+}
+.head-selected-work .servicesBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.head-selected-work .servicesBtn #svg {
+  padding: 5px;
+  border: 1px solid #34312c;
+  border-radius: 50%;
+  background-color: #181716;
+  text-align: center;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  rotate: 225deg;
+}
+.head-selected-work .servicesBtn span {
+  padding-left: 4px;
+  font-family: "Satoshi", "sans-serif";
+  font-size: 13px;
+  line-height: 16px;
+  color: rgb(218, 197, 167);
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+.head-selected-work .servicesBtn:hover #svg {
+  border: 0.1px solid rgb(101, 93, 82);
+  background-color: #2b2825;
+  rotate: 270deg;
+}
+
+.portfolio-section {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.portfolio-section .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.portfolio-section .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(48, 43, 34);
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.portfolio-section .portfolio-item .arrow-svg {
+  padding: 10px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid #34312c;
+  border-radius: 50%;
+  background-color: #181716;
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  rotate: 270deg;
+  opacity: 0;
+}
+.portfolio-section .portfolio-item:hover .arrow-svg {
+  border: 0.1px solid rgb(101, 93, 82);
+  background-color: #2b2825;
+  rotate: 225deg;
+  opacity: 1;
+}
+.portfolio-section .portfolio-item img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.portfolio-section .portfolio-item:hover img {
+  transform: scale(1.05);
+}
+.portfolio-section .overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 624px;
+  padding: 0.8rem 1rem;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid rgb(48, 43, 34);
+  border-radius: 3px;
+  color: #e0d2b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Satoshi", "san-serif";
+}
+.portfolio-section .overlay .title {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 31px;
+}
+.portfolio-section .overlay .tag {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 2px;
 }
