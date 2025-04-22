@@ -419,7 +419,7 @@ body {
 }
 
 // Section-5
-.portfolio-section {
+.selected-work {
   max-width: 1360px;
   margin: 0 auto;
 
@@ -435,6 +435,7 @@ body {
     border: 1px solid rgb(48 43 34);
     border-radius: 3px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 
     .arrow-svg {
       padding: 10px;
@@ -500,5 +501,212 @@ body {
       line-height: 16px;
       letter-spacing: 2px;
     }
+  }
+}
+
+// Section-6
+.web-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(218, 197, 167);
+  padding-top: 160px;
+  gap: 16px;
+
+  span {
+    font-family: 'Satoshi', 'san-serif';
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-family: 'Satoshi', 'san-serif';
+    font-size: 96px;
+    font-weight: 100;
+    line-height: 106px;
+    text-align: center;
+
+    span {
+      font-family: 'Gambetta', serif;
+      font-size: 96px;
+      font-weight: 100;
+      line-height: 106px;
+    }
+  }
+
+  p {
+    font-family: 'chillax', serif;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .center-line {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    #svg {
+      padding: 10px;
+      border: 1px solid #34312c;
+      border-radius: 50%;
+      background-color: #181716;
+      text-align: center;
+      display: flex;
+    }
+
+    .line {
+      background-color: rgb(44 41 37);
+      width: 1px;
+      height: 60px;
+    }
+  }
+
+}
+
+// Section-7
+.web-process-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+  padding-bottom: 100px;
+  .steps {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+
+    .step1-part2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+
+      .number {
+        color: rgb(218 197 167);
+        background-color: rgb(24 23 22);
+        border: 1px solid rgb(44 41 37);
+        border-radius: 50%;
+        padding: 10px;
+        font-family: 'Satoshi', 'san-serif';
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-align: center;
+        display: flex;
+      }
+
+      .line-1 {
+        background-color: rgb(44 41 37);
+        width: 1px;
+        height: 180px;
+      }
+
+      .line-2 {
+        background-color: rgb(44 41 37);
+        width: 1px;
+        height: 180px;
+      }
+      #line-5{
+        background-color: rgb(7 7 5)
+      }
+    }
+
+    .step1-part3, .step2-part1, .step3-part3, .step4-part1, .step5-part3 {
+      .step-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #181716;
+        border: 1px solid rgb(44 41 37);
+        border-radius: 3px;
+        color: rgb(218, 197, 167);
+        height: min-content;
+        width: 100%;
+        padding: 48px;
+
+        #p-1 {
+          font-family: 'satoshi', 'san-serif';
+          font-size: 13px;
+          line-height: 16px;
+          color: rgba(218, 197, 167, 0.6);
+          letter-spacing: 1.4px;
+          padding-bottom: 4px;
+        }
+
+        h2 {
+          font-family: 'satoshi', 'san-serif';
+          font-size: 24px;
+          line-height: 31px;
+          font-weight: 100;
+          padding-bottom: 12px;
+          letter-spacing: 2px;
+        }
+
+        li::marker {
+          color: rgb(218 197 167);
+        }
+
+        #p-2 {
+          padding-bottom: 20px;
+          letter-spacing: 1.3px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          padding-left: 15px;
+        }
+
+        #p-2,
+        li {
+          font-family: 'chillax', 'san-serif';
+          font-size: 16px;
+          
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+// Section-8
+.reviews-head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  h1 {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 100;
+    font-size: 96px;
+    line-height: 106px;
+    text-align: center;
+    color: rgb(218, 197, 167);
+
+    span {
+      font-family: 'Gambetta', serif;
+    }
+  }
+  p{
+    font-family: 'chillax', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgb(218, 197, 167);
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+    padding-top: 13px;
   }
 }

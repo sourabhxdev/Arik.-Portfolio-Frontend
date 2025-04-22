@@ -365,23 +365,24 @@ body {
   rotate: 270deg;
 }
 
-.portfolio-section {
+.selected-work {
   max-width: 1360px;
   margin: 0 auto;
 }
-.portfolio-section .portfolio-grid {
+.selected-work .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
-.portfolio-section .portfolio-item {
+.selected-work .portfolio-item {
   position: relative;
   overflow: hidden;
   border: 1px solid rgb(48, 43, 34);
   border-radius: 3px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-.portfolio-section .portfolio-item .arrow-svg {
+.selected-work .portfolio-item .arrow-svg {
   padding: 10px;
   position: absolute;
   bottom: 50%;
@@ -395,23 +396,23 @@ body {
   rotate: 270deg;
   opacity: 0;
 }
-.portfolio-section .portfolio-item:hover .arrow-svg {
+.selected-work .portfolio-item:hover .arrow-svg {
   border: 0.1px solid rgb(101, 93, 82);
   background-color: #2b2825;
   rotate: 225deg;
   opacity: 1;
 }
-.portfolio-section .portfolio-item img {
+.selected-work .portfolio-item img {
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.5s ease;
 }
-.portfolio-section .portfolio-item:hover img {
+.selected-work .portfolio-item:hover img {
   transform: scale(1.05);
 }
-.portfolio-section .overlay {
+.selected-work .overlay {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -428,14 +429,201 @@ body {
   align-items: center;
   font-family: "Satoshi", "san-serif";
 }
-.portfolio-section .overlay .title {
+.selected-work .overlay .title {
   font-weight: 100;
   font-size: 24px;
   line-height: 31px;
 }
-.portfolio-section .overlay .tag {
+.selected-work .overlay .tag {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 2px;
+}
+
+.web-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(218, 197, 167);
+  padding-top: 160px;
+  gap: 16px;
+}
+.web-process span {
+  font-family: "Satoshi", "san-serif";
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.web-process h1 {
+  font-family: "Satoshi", "san-serif";
+  font-size: 96px;
+  font-weight: 100;
+  line-height: 106px;
+  text-align: center;
+}
+.web-process h1 span {
+  font-family: "Gambetta", serif;
+  font-size: 96px;
+  font-weight: 100;
+  line-height: 106px;
+}
+.web-process p {
+  font-family: "chillax", serif;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 500px;
+  text-align: center;
+}
+.web-process .center-line {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.web-process .center-line #svg {
+  padding: 10px;
+  border: 1px solid #34312c;
+  border-radius: 50%;
+  background-color: #181716;
+  text-align: center;
+  display: flex;
+}
+.web-process .center-line .line {
+  background-color: rgb(44, 41, 37);
+  width: 1px;
+  height: 60px;
+}
+
+.web-process-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  padding-bottom: 100px;
+}
+.web-process-2 .steps {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+}
+.web-process-2 .steps .step1-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.web-process-2 .steps .step1-part2 .number {
+  color: rgb(218, 197, 167);
+  background-color: rgb(24, 23, 22);
+  border: 1px solid rgb(44, 41, 37);
+  border-radius: 50%;
+  padding: 10px;
+  font-family: "Satoshi", "san-serif";
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: flex;
+}
+.web-process-2 .steps .step1-part2 .line-1 {
+  background-color: rgb(44, 41, 37);
+  width: 1px;
+  height: 180px;
+}
+.web-process-2 .steps .step1-part2 .line-2 {
+  background-color: rgb(44, 41, 37);
+  width: 1px;
+  height: 180px;
+}
+.web-process-2 .steps .step1-part2 #line-5 {
+  background-color: rgb(7, 7, 5);
+}
+.web-process-2 .steps .step1-part3 .step-card, .web-process-2 .steps .step2-part1 .step-card, .web-process-2 .steps .step3-part3 .step-card, .web-process-2 .steps .step4-part1 .step-card, .web-process-2 .steps .step5-part3 .step-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #181716;
+  border: 1px solid rgb(44, 41, 37);
+  border-radius: 3px;
+  color: rgb(218, 197, 167);
+  height: -moz-min-content;
+  height: min-content;
+  width: 100%;
+  padding: 48px;
+}
+.web-process-2 .steps .step1-part3 .step-card #p-1, .web-process-2 .steps .step2-part1 .step-card #p-1, .web-process-2 .steps .step3-part3 .step-card #p-1, .web-process-2 .steps .step4-part1 .step-card #p-1, .web-process-2 .steps .step5-part3 .step-card #p-1 {
+  font-family: "satoshi", "san-serif";
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(218, 197, 167, 0.6);
+  letter-spacing: 1.4px;
+  padding-bottom: 4px;
+}
+.web-process-2 .steps .step1-part3 .step-card h2, .web-process-2 .steps .step2-part1 .step-card h2, .web-process-2 .steps .step3-part3 .step-card h2, .web-process-2 .steps .step4-part1 .step-card h2, .web-process-2 .steps .step5-part3 .step-card h2 {
+  font-family: "satoshi", "san-serif";
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 100;
+  padding-bottom: 12px;
+  letter-spacing: 2px;
+}
+.web-process-2 .steps .step1-part3 .step-card li::marker, .web-process-2 .steps .step2-part1 .step-card li::marker, .web-process-2 .steps .step3-part3 .step-card li::marker, .web-process-2 .steps .step4-part1 .step-card li::marker, .web-process-2 .steps .step5-part3 .step-card li::marker {
+  color: rgb(218, 197, 167);
+}
+.web-process-2 .steps .step1-part3 .step-card #p-2, .web-process-2 .steps .step2-part1 .step-card #p-2, .web-process-2 .steps .step3-part3 .step-card #p-2, .web-process-2 .steps .step4-part1 .step-card #p-2, .web-process-2 .steps .step5-part3 .step-card #p-2 {
+  padding-bottom: 20px;
+  letter-spacing: 1.3px;
+}
+.web-process-2 .steps .step1-part3 .step-card ul, .web-process-2 .steps .step2-part1 .step-card ul, .web-process-2 .steps .step3-part3 .step-card ul, .web-process-2 .steps .step4-part1 .step-card ul, .web-process-2 .steps .step5-part3 .step-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 15px;
+}
+.web-process-2 .steps .step1-part3 .step-card #p-2,
+.web-process-2 .steps .step1-part3 .step-card li, .web-process-2 .steps .step2-part1 .step-card #p-2,
+.web-process-2 .steps .step2-part1 .step-card li, .web-process-2 .steps .step3-part3 .step-card #p-2,
+.web-process-2 .steps .step3-part3 .step-card li, .web-process-2 .steps .step4-part1 .step-card #p-2,
+.web-process-2 .steps .step4-part1 .step-card li, .web-process-2 .steps .step5-part3 .step-card #p-2,
+.web-process-2 .steps .step5-part3 .step-card li {
+  font-family: "chillax", "san-serif";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.reviews-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.reviews-head h1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 106px;
+  text-align: center;
+  color: rgb(218, 197, 167);
+}
+.reviews-head h1 span {
+  font-family: "Gambetta", serif;
+}
+.reviews-head p {
+  font-family: "chillax", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  color: rgb(218, 197, 167);
+  text-align: center;
+  margin: auto;
+  width: 40vw;
+  padding-top: 13px;
 }
