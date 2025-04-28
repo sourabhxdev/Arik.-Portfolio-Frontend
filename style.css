@@ -863,6 +863,21 @@ body {
   line-height: 29px;
   font-weight: 100;
 }
+.view-11 .frame-2 .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 15px;
+}
+.view-11 .frame-2 .links #social-logo {
+  width: 45px;
+  border: 1px solid #3c3832;
+  background-color: #22201e;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
 
 .marquee-2 {
   padding: 100px 0 0 0;
@@ -956,6 +971,9 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 2px;
 }
 .footer button svg {
   transition: all 0.4s ease;
@@ -999,9 +1017,13 @@ body {
   color: #8d7f6d;
   transition: all 0.2s ease-in-out;
 }
-.footer-2 #sec-hand, .footer-2 li:hover {
+.footer-2 #sec-hand,
+.footer-2 li:hover {
   color: rgb(218, 197, 167);
   cursor: pointer;
+}
+.footer-2 .sec1 #ssvg {
+  width: 80px;
 }
 .footer-2 .sec1 button {
   font-family: "satoshi", "san-serif";
@@ -1016,6 +1038,8 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 20px;
+  border: none;
+  border-radius: 3px;
 }
 .footer-2 .sec1 button svg {
   transition: all 0.4s ease;
@@ -1023,4 +1047,61 @@ body {
 }
 .footer-2 .sec1 button:hover svg {
   rotate: 270deg;
+}
+.footer-2 .sec1 #socialLink {
+  font-family: "Satoshi", "san-serif";
+  font-size: 13px;
+  color: rgb(218, 197, 167);
+  line-height: 16px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  text-decoration: none;
+}
+.footer-2 .sec1 #socialLink #socialLogo {
+  width: 45px;
+  border: 1px solid #3c3832;
+  background-color: #22201e;
+  border-radius: 50%;
+  padding: 8px;
+}
+.footer-2 p {
+  font-family: "Chillax", "san-serif";
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 25px;
+  color: rgb(218, 197, 167);
+  padding: 20px 0 80px 0;
+}
+.footer-2 p a {
+  color: rgb(218, 197, 167);
+}
+
+.lastBox {
+  font-family: "satoshi", "san-serif";
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 12px;
+  color: rgb(218, 197, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 120px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #22201e;
+  border: 1px solid #3c3933;
+  border-radius: 3px;
+  padding: 7px 0;
+}
+.lastBox .dot {
+  width: 7px;
+  background-color: rgb(218, 197, 167);
+  height: 7px;
+  border: none;
+  border-radius: 50%;
 }
