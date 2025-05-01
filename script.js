@@ -12,15 +12,15 @@ const observer = new IntersectionObserver((entries, observer) => {
       const direction = entry.boundingClientRect.y > 0 ? 'down' : 'up';
       if(direction == 'down'){
                 console.log("User scrolling down");
-                name1.style.left = `-160px`
-                name2.style.right = `-160px`
+                name1.style.left = `-12%`
+                name2.style.right = `-12%`
                 name1.style.opacity = `1`
                 name2.style.opacity = `1`
             }
             else{
                 console.log("User scrolling up");
-                name1.style.left = `-300px`
-                name2.style.right = `-300px`
+                name1.style.left = `-20%`
+                name2.style.right = `-20%`
                 name1.style.opacity = `0.3`
                 name2.style.opacity = `0.3`
             }
@@ -33,3 +33,10 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 observer.observe(target);
+
+const hamburger = document.querySelector(".hamburger .menu");
+const navList = document.querySelector(".navlist-2");
+
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("show");
+});

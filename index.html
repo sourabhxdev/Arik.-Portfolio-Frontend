@@ -23,8 +23,27 @@
                 <span class="span">ABOUT</span>
                 <span class="span">BLOG</span>
             </div>
+
+            <div class="but-ham">
             <button>LET'S TALK</button>
+            <div class="hamburger">
+                <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="45" height="45" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
+            </div>
+        </div>
         </nav>
+        <div class="navlist-2">
+            <p>SERVICES</p>
+            <p>WORK</p>
+            <p>ABOUT</p>
+            <p>BLOG</p>
+            <button>LET'S TALK</button>
+        </div>
         <div class="userImg">
             <img src="assets/sour.webp" alt="" class="fade-img">
         </div>
@@ -256,121 +275,261 @@
     </section>
 
     <section class="web-process-2">
-        <div class="steps" id="step1">
-            <div class="step1-part1"></div>
-            <div class="step1-part2">
-                <div class="line-1"></div>
-                <div class="number">01</div>
-                <div class="line-2"></div>
+        <div class="web-process-2-2">
+            <div class="steps" id="step1">
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">01</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step1-part3">
+                    <div class="step-card">
+                        <p id="p-1">DO WE MATCH?</p>
+                        <h2>DISCOVERY CALL</h2>
+                        <p id="p-2">Before we start, we determine if and how I can help you. What are your requirements
+                            for
+                            your new
+                            website? Why do you need a new website? What goals do you have, and what problems can we
+                            solve
+                            with a new website?</p>
+                        <ul>
+                            <li>We get to know each other better</li>
+                            <li>Determine how I can best assist you</li>
+                            <li>Understand the goals you have for your website</li>
+                        </ul>
+                        <div class="step1-part4">2 HOURS</div>
+                    </div>
+                </div>
             </div>
-            <div class="step1-part3">
-                <div class="step-card">
-                    <p id="p-1">DO WE MATCH?</p>
-                    <h2>DISCOVERY CALL</h2>
-                    <p id="p-2">Before we start, we determine if and how I can help you. What are your requirements for
-                        your new
-                        website? Why do you need a new website? What goals do you have, and what problems can we solve
-                        with a new website?</p>
-                    <ul>
-                        <li>We get to know each other better</li>
-                        <li>Determine how I can best assist you</li>
-                        <li>Understand the goals you have for your website</li>
-                    </ul>
-                    <div class="step1-part4">2 HOURS</div>
+            <div class="steps" id="step2">
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">02</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step2-part1">
+                    <div class="step-card">
+                        <p id="p-1">WE NEED A PLAN</p>
+                        <h2>CONCEPT & STRATEGY</h2>
+                        <p id="p-2">Together, we develop a strategy that successfully combines your goals with the needs
+                            of
+                            your target audience. Based on this concept, I create the first wireframes and an
+                            interactive
+                            prototype. This provides us with a very good impression of the website and the user
+                            interface.
+                        </p>
+                        <ul>
+                            <li>UX Design</li>
+                            <li>Wireframes</li>
+                            <li>Interactive Prototype</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="steps" id="step3">
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">03</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step3-part3">
+                    <div class="step-card">
+                        <p id="p-1">SOME MAGIC</p>
+                        <h2>WEB DESIGN</h2>
+                        <p id="p-2">Now comes the magic. Based on the previously developed concept, I create a high-end
+                            screen design perfectly tailored to your brand. A web design that sets you apart from your
+                            competition, fits your target audience ideally, and provides an excellent user experience.
+                        </p>
+                        <ul>
+                            <li>High-end web design tailored to your brand</li>
+                            <li>Interactive prototype of the design</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="steps" id="step4">
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">04</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step4-part1">
+                    <div class="step-card">
+                        <p id="p-1">MORE MAGIC</p>
+                        <h2>DEVELOPMENT</h2>
+                        <p id="p-2">In this step, we breathe life into your new high-end design. You will receive a
+                            custom-built website using a modular web design system and CMS integration. Animations will
+                            add
+                            the necessary flair to your site and set you apart from the boring competition.</p>
+                        <ul>
+                            <li>Custom framer website</li>
+                            <li>Modular web design systems</li>
+                            <li>CMS integration</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="steps" id="step5">
+
+                <div class="step1-part2">
+                    <div class="line-1" id="line-5-1"></div>
+                    <div class="number">05</div>
+                    <div class="line-2" id="line-5-2"></div>
+                </div>
+                <div class="step1-part3">
+                    <div class="step-card">
+                        <p id="p-1">READY TO GO</p>
+                        <h2>WEBSITE ONBOARDING</h2>
+                        <p id="p-2">In a personal Framer workshop, I will show you how to make changes to your new
+                            website
+                            quickly and easily. Additionally, you will receive personalized Framer video tutorials that
+                            you
+                            can access at any time. Edit your Framer website without a complicated backend or the need
+                            for
+                            an additional programmer. It's as simple as that.</p>
+                        <ul>
+                            <li>Personal workshop</li>
+                            <li>Personalized video tutorials</li>
+                            <li>Edit text and images directly on your website</li>
+                        </ul>
+                        <div class="step1-part4">2 HOURS</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="steps" id="step2">
-            <div class="step2-part1">
-                <div class="step-card">
-                    <p id="p-1">WE NEED A PLAN</p>
-                    <h2>CONCEPT & STRATEGY</h2>
-                    <p id="p-2">Together, we develop a strategy that successfully combines your goals with the needs of
-                        your target audience. Based on this concept, I create the first wireframes and an interactive
-                        prototype. This provides us with a very good impression of the website and the user interface.
-                    </p>
-                    <ul>
-                        <li>UX Design</li>
-                        <li>Wireframes</li>
-                        <li>Interactive Prototype</li>
-                    </ul>
-                    <div class="step1-part4">2 WEEKS</div>
+
+        <div class="web-process-2-1">
+            <div class="steps" id="step1">
+                <div class="step1-part1"></div>
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">01</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step1-part3">
+                    <div class="step-card">
+                        <p id="p-1">DO WE MATCH?</p>
+                        <h2>DISCOVERY CALL</h2>
+                        <p id="p-2">Before we start, we determine if and how I can help you. What are your requirements
+                            for
+                            your new
+                            website? Why do you need a new website? What goals do you have, and what problems can we
+                            solve
+                            with a new website?</p>
+                        <ul>
+                            <li>We get to know each other better</li>
+                            <li>Determine how I can best assist you</li>
+                            <li>Understand the goals you have for your website</li>
+                        </ul>
+                        <div class="step1-part4">2 HOURS</div>
+                    </div>
                 </div>
             </div>
-            <div class="step1-part2">
-                <div class="line-1"></div>
-                <div class="number">02</div>
-                <div class="line-2"></div>
-            </div>
-            <div class="step1-part3">
-            </div>
-        </div>
-        <div class="steps" id="step3">
-            <div class="step1-part1"></div>
-            <div class="step1-part2">
-                <div class="line-1"></div>
-                <div class="number">03</div>
-                <div class="line-2"></div>
-            </div>
-            <div class="step3-part3">
-                <div class="step-card">
-                    <p id="p-1">SOME MAGIC</p>
-                    <h2>WEB DESIGN</h2>
-                    <p id="p-2">Now comes the magic. Based on the previously developed concept, I create a high-end
-                        screen design perfectly tailored to your brand. A web design that sets you apart from your
-                        competition, fits your target audience ideally, and provides an excellent user experience.</p>
-                    <ul>
-                        <li>High-end web design tailored to your brand</li>
-                        <li>Interactive prototype of the design</li>
-                    </ul>
-                    <div class="step1-part4">2 WEEKS</div>
+            <div class="steps" id="step2">
+                <div class="step2-part1">
+                    <div class="step-card">
+                        <p id="p-1">WE NEED A PLAN</p>
+                        <h2>CONCEPT & STRATEGY</h2>
+                        <p id="p-2">Together, we develop a strategy that successfully combines your goals with the needs
+                            of
+                            your target audience. Based on this concept, I create the first wireframes and an
+                            interactive
+                            prototype. This provides us with a very good impression of the website and the user
+                            interface.
+                        </p>
+                        <ul>
+                            <li>UX Design</li>
+                            <li>Wireframes</li>
+                            <li>Interactive Prototype</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
+                </div>
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">02</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step1-part3">
                 </div>
             </div>
-        </div>
-        <div class="steps" id="step4">
-            <div class="step4-part1">
-                <div class="step-card">
-                    <p id="p-1">MORE MAGIC</p>
-                    <h2>DEVELOPMENT</h2>
-                    <p id="p-2">In this step, we breathe life into your new high-end design. You will receive a
-                        custom-built website using a modular web design system and CMS integration. Animations will add
-                        the necessary flair to your site and set you apart from the boring competition.</p>
-                    <ul>
-                        <li>Custom framer website</li>
-                        <li>Modular web design systems</li>
-                        <li>CMS integration</li>
-                    </ul>
-                    <div class="step1-part4">2 WEEKS</div>
+            <div class="steps" id="step3">
+                <div class="step1-part1"></div>
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">03</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step3-part3">
+                    <div class="step-card">
+                        <p id="p-1">SOME MAGIC</p>
+                        <h2>WEB DESIGN</h2>
+                        <p id="p-2">Now comes the magic. Based on the previously developed concept, I create a high-end
+                            screen design perfectly tailored to your brand. A web design that sets you apart from your
+                            competition, fits your target audience ideally, and provides an excellent user experience.
+                        </p>
+                        <ul>
+                            <li>High-end web design tailored to your brand</li>
+                            <li>Interactive prototype of the design</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
                 </div>
             </div>
-            <div class="step1-part2">
-                <div class="line-1"></div>
-                <div class="number">04</div>
-                <div class="line-2"></div>
+            <div class="steps" id="step4">
+                <div class="step4-part1">
+                    <div class="step-card">
+                        <p id="p-1">MORE MAGIC</p>
+                        <h2>DEVELOPMENT</h2>
+                        <p id="p-2">In this step, we breathe life into your new high-end design. You will receive a
+                            custom-built website using a modular web design system and CMS integration. Animations will
+                            add
+                            the necessary flair to your site and set you apart from the boring competition.</p>
+                        <ul>
+                            <li>Custom framer website</li>
+                            <li>Modular web design systems</li>
+                            <li>CMS integration</li>
+                        </ul>
+                        <div class="step1-part4">2 WEEKS</div>
+                    </div>
+                </div>
+                <div class="step1-part2">
+                    <div class="line-1"></div>
+                    <div class="number">04</div>
+                    <div class="line-2"></div>
+                </div>
+                <div class="step1-part3"></div>
             </div>
-            <div class="step1-part3"></div>
-        </div>
-        <div class="steps" id="step5">
-            <div class="step1-part1"></div>
-            <div class="step1-part2">
-                <div class="line-1" id="line-5-1"></div>
-                <div class="number">05</div>
-                <div class="line-2" id="line-5-2"></div>
-            </div>
-            <div class="step1-part3">
-                <div class="step-card">
-                    <p id="p-1">READY TO GO</p>
-                    <h2>WEBSITE ONBOARDING</h2>
-                    <p id="p-2">In a personal Framer workshop, I will show you how to make changes to your new website
-                        quickly and easily. Additionally, you will receive personalized Framer video tutorials that you
-                        can access at any time. Edit your Framer website without a complicated backend or the need for
-                        an additional programmer. It's as simple as that.</p>
-                    <ul>
-                        <li>Personal workshop</li>
-                        <li>Personalized video tutorials</li>
-                        <li>Edit text and images directly on your website</li>
-                    </ul>
-                    <div class="step1-part4">2 HOURS</div>
+            <div class="steps" id="step5">
+                <div class="step1-part1"></div>
+                <div class="step1-part2">
+                    <div class="line-1" id="line-5-1"></div>
+                    <div class="number">05</div>
+                    <div class="line-2" id="line-5-2"></div>
+                </div>
+                <div class="step1-part3">
+                    <div class="step-card">
+                        <p id="p-1">READY TO GO</p>
+                        <h2>WEBSITE ONBOARDING</h2>
+                        <p id="p-2">In a personal Framer workshop, I will show you how to make changes to your new
+                            website
+                            quickly and easily. Additionally, you will receive personalized Framer video tutorials that
+                            you
+                            can access at any time. Edit your Framer website without a complicated backend or the need
+                            for
+                            an additional programmer. It's as simple as that.</p>
+                        <ul>
+                            <li>Personal workshop</li>
+                            <li>Personalized video tutorials</li>
+                            <li>Edit text and images directly on your website</li>
+                        </ul>
+                        <div class="step1-part4">2 HOURS</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -568,6 +727,7 @@
                     <p>LET'S TALK</p>
                     <p>+++</p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -587,59 +747,63 @@
             </svg></button>
     </section>
 
-    <section class="footer-2">
-        <div class="sec1">
-            <div id="sec-head"><img id="ssvg" src="assets/svg/sourabh.svg" alt=""></div>
+    <section class="allsec">
+        <div class="footer-2">
 
-            <ul>
-                <li><a style="font-size: 16px;" id="socialLink" target="_blank"
-                        href="https://www.linkedin.com/in/sourabhxdev/"> <img id="socialLogo"
-                            src="assets/social/linkedin.svg" alt="">LinkedIn</a></li>
-                <li><a style="font-size: 16px;" id="socialLink" target="_blank" href="https://github.com/sourabhxdev">
-                        <img id="socialLogo" src="assets/social/github.svg" alt="">GitHub</a></li>
-                <li><a id="socialLink" target="_blank" href="https://www.instagram.com/sourabhxdev/"> <img
-                            id="socialLogo" src="assets/social/insta.svg" alt="">INSTAGRAM</a></li>
-            </ul>
+            <div class="sec1">
+                <div id="sec-head"><img id="ssvg" src="assets/svg/sourabh.svg" alt=""></div>
 
-        </div>
-        <div class="sec1">
-            <div id="sec-head">Pages</div>
-            <ul>
-                <li>HOME</li>
-                <li>SERVICES</li>
-                <li>ABOUT</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
-            </ul>
-            <button>MORE TEMPLATES <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
-                    color="rgb(0, 0, 0)"
-                    style="user-select: none; width: 15px; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(0, 0, 0)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
-                    <g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
-                        <path
-                            d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z">
-                        </path>
-                    </g>
-                </svg></button>
-        </div>
-        <div class="sec1">
-            <div id="sec-head">CMS</div>
-            <ul>
-                <li>WORK</li>
-                <li>WORK SINGLE</li>
-                <li>BLOG</li>
-                <li>BLOG SINGLE</li>
-            </ul>
-        </div>
-        <div class="sec1">
-            <div id="sec-head">Utility Pages</div>
-            <ul>
-                <li>STYLE GUIDE</li>
-                <li>404 ERROR PAGE</li>
-                <li>LICENSING</li>
+                <ul>
+                    <li><a style="font-size: 16px;" id="socialLink" target="_blank"
+                            href="https://www.linkedin.com/in/sourabhxdev/"> <img id="socialLogo"
+                                src="assets/social/linkedin.svg" alt="">LinkedIn</a></li>
+                    <li><a style="font-size: 16px;" id="socialLink" target="_blank"
+                            href="https://github.com/sourabhxdev">
+                            <img id="socialLogo" src="assets/social/github.svg" alt="">GitHub</a></li>
+                    <li><a id="socialLink" target="_blank" href="https://www.instagram.com/sourabhxdev/"> <img
+                                id="socialLogo" src="assets/social/insta.svg" alt="">INSTAGRAM</a></li>
+                </ul>
 
-            </ul>
+            </div>
+            <div class="sec1">
+                <div id="sec-head">Pages</div>
+                <ul>
+                    <li>HOME</li>
+                    <li>SERVICES</li>
+                    <li>ABOUT</li>
+                    <li>PRICING</li>
+                    <li>CONTACT</li>
+                </ul>
+                <button>MORE TEMPLATES <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
+                        color="rgb(0, 0, 0)"
+                        style="user-select: none; width: 15px; height: 100%; display: inline-block; fill: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(0, 0, 0)); color: var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167)); flex-shrink: 0;">
+                        <g color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))" weight="light">
+                            <path
+                                d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z">
+                            </path>
+                        </g>
+                    </svg></button>
+            </div>
+            <div class="sec1">
+                <div id="sec-head">CMS</div>
+                <ul>
+                    <li>WORK</li>
+                    <li>WORK SINGLE</li>
+                    <li>BLOG</li>
+                    <li>BLOG SINGLE</li>
+                </ul>
+            </div>
+            <div class="sec1">
+                <div id="sec-head">Utility Pages</div>
+                <ul>
+                    <li>STYLE GUIDE</li>
+                    <li>404 ERROR PAGE</li>
+                    <li>LICENSING</li>
+
+                </ul>
+            </div>
+            <p>&copy; Made by Sourabh. Inspired by <a href="https://www.gola.supply/">Gola Templates</a>.</p>
         </div>
-        <p>&copy; Made by Sourabh. Inspired by <a href="https://www.gola.supply/">Gola Templates</a>.</p>
     </section>
 
     <section class="lastBox">
