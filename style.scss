@@ -39,13 +39,53 @@ body {
   scrollbar-width: thin;
 }
 
+@keyframes appear {
+  from{
+    opacity: 0;
+    
+  }
+  to{
+    opacity: 1;
+    
+  }
+}
+@keyframes appear-2 {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes appear-3 {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes appear-4 {
+  from{
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 //Section - 1
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -194,7 +234,7 @@ body {
     padding-top: 40px;
     position: relative;
     width: fit-content;
-
+    
     .fade-img {
       display: block;
       width: 100%;
@@ -214,7 +254,9 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 25px;
-
+    animation: appear-4 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     h1 {
       font-family: 'Satoshi', sans-serif;
       font-weight: 100;
@@ -379,7 +421,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-
+  
 
   .webCard,
   .devCard,
@@ -390,7 +432,9 @@ body {
     background-color: rgb(24 23 22);
     border: 1px solid rgb(52 50 48);
     position: relative;
-
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     .first-p {
       color: rgba(218, 197, 167, 0.6);
       font-family: "Satoshi", sans-serif;
@@ -529,7 +573,7 @@ body {
 .selected-work {
   max-width: 1360px;
   margin: 0 auto;
-
+  
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -537,6 +581,9 @@ body {
   }
 
   .portfolio-item {
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
     position: relative;
     overflow: hidden;
     border: 1px solid rgb(48 43 34);
@@ -620,6 +667,10 @@ body {
   color: rgb(218, 197, 167);
   padding-top: 160px;
   gap: 16px;
+    animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+  
 
   span {
     font-family: 'Satoshi', 'san-serif';
@@ -1039,7 +1090,10 @@ body {
   padding: 0 4rem;
   color: rgb(218, 197, 167);
   padding-top: 150px;
-
+    animation: appear 1s linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+  
   .frame-1 {
     p {
       font-family: 'satoshi', 'san-serif';
@@ -1629,6 +1683,14 @@ body {
   .footer-2 {
     padding-top: 4rem;
   }
+  .web-process{
+    .center-line{
+      padding-bottom: 20px;
+      .line{
+        height: 0;
+      }
+    }
+  }
 
 }
 
@@ -1725,7 +1787,7 @@ body {
 
   .intro nav {
 
-    padding: 10px 0 10px 1rem;
+    padding: 10px 0 20px 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -1879,6 +1941,12 @@ body {
       span {
         font-size: 56px;
         line-height: 62px;
+      }
+    }
+    .center-line{
+      padding-bottom: 20px;
+      .line{
+        height: 0;
       }
     }
   }
@@ -2216,5 +2284,70 @@ body {
 @media(min-width: 1370px) {
   .marquee-2, .footer, .allsec{
     width: 100vw;
+  }
+}
+
+@media(min-width: 1024px){
+  .web-process-2-1{
+    .steps{
+      .step1-part3, .step3-part3, .step5-part3{
+        animation: appear-3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+      }
+      .step2-part1, .step4-part1{
+        animation: appear-2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+      }
+    }
+  }
+
+  .reviews{
+    #rev-card1, #rev-card3, #rev-card5{
+      animation: appear-2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+    }
+
+    #rev-card2, #rev-card4, #rev-card6{
+      animation: appear-3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+    }
+  }
+}
+
+
+@media(max-width: 1024px){
+  .web-process-2-2{
+    .steps{
+      .stepCard{
+        animation: appear-3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+      }
+    }
+  }
+
+  .reviews{
+    #rev-card1, #rev-card3, #rev-card5{
+      animation: appear-2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+    }
+
+    #rev-card2, #rev-card4, #rev-card6{
+      animation: appear-3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+    }
+  }
+
+
+  .view-11{
+    animation: appear-4 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   }
 }
