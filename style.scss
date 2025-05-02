@@ -1787,7 +1787,7 @@ animation-range: entry 0% cover 40%;
 
   .intro nav {
 
-    padding: 10px 0 20px 1rem;
+    padding: 10px 0 40px 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -1831,8 +1831,12 @@ animation-range: entry 0% cover 40%;
   .cards .devCard,
   .cards .contentCard {
     width: 90%;
-    min-height: 30vh;
+    min-height: 40vh;
     max-height: 50vh;
+  }
+
+  .cards .devCard{
+    min-height: 45vh;
   }
 
   .selected-work .portfolio-grid {
